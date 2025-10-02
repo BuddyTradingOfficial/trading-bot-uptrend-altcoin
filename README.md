@@ -1,3 +1,8 @@
+## Provenance and access
+This repository documents the strategy published by the creator **Mark Lee** on the BuddyTrading marketplace.  
+The marketplace listing runs the creator’s proprietary implementation. BuddyTrading and this repo’s maintainers do not have rights or access to that private source code.  
+The code in this repo is a reference implementation for education and testing and may differ from the creator’s production code.
+
 ```bash
 # Trading Bot: Uptrend Altcoin
 
