@@ -1,4 +1,5 @@
-if (GetNumCandles(state) < 2) { // 2 price points needed
+function onEnter(state, update) {
+  if (GetNumCandles(state) < 2) { // 2 price points needed
     return state
   }
 
@@ -20,3 +21,6 @@ if (GetNumCandles(state) < 2) { // 2 price points needed
   }
 
   return state
+}
+
+module.exports = onEnter
