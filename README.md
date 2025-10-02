@@ -1,39 +1,67 @@
 # Trading Bot – Uptrend Altcoin
 
-This is a JavaScript trading bot strategy for uptrend altcoins, built for the BuddyTrading marketplace.
+A JavaScript trading bot strategy for uptrend altcoins, built for the BuddyTrading marketplace.
+
+---
 
 ## Features
-- EMA-based strategy:
-  - Long entry when short EMA crosses above long EMA
-  - Long/short exits when cross signals reverse
-- Configurable trade amount (default: 0.2)
-- Minimal drawdown with risk control
+- **EMA-based strategy**
+  - Enters long when short EMA crosses above long EMA
+  - Closes long/short when signals reverse
+- **Configurable trade amount** (default: `0.2`)
+- **Minimal drawdown** with built-in risk control
 
-## Repository Structure
+---
+
+## 📂 Repository Structure
+
 src/
-├── indicators.js      # Defines EMA indicators
-├── onEnter.js         # Entry conditions (long position)
-├── onUpdateLong.js    # Logic to close long positions
-├── onUpdateShort.js   # Logic to close short positions
-└── bot.js             # Main bot runner
+├── indicators.js     # Defines EMA indicators
+├── onEnter.js        # Entry conditions (open long position)
+├── onUpdateLong.js   # Logic to close long positions
+├── onUpdateShort.js  # Logic to close short positions
+└── bot.js            # Main bot runner
+
+---
+
 ## Setup
-1. Clone the repo:
+
+1. **Clone the repository**
    ```bash
    git clone https://github.com/BuddyTradingOfficial/trading-bot-uptrend-altcoin.git
    cd trading-bot-uptrend-altcoin
-2.	Install Node.js (v18+ recommended).
-3.	Add your own runner logic or connect to BuddyTrading engine.
-Disclaimer
-This strategy is for educational purposes only.
-Use at your own risk. Not financial advice.
----
 
-### 3. (Optional) Add `package.json`
-If you want it to look like a real Node.js project:
-```bash
+	2.	Install Node.js
+Ensure Node.js v18+ is installed:
+	3.	Run or connect to BuddyTrading
+Add your own runner logic or connect this strategy to the BuddyTrading engine.
+
+⸻
+
+(Optional) Initialize package.json
+
+If you want to make this a full Node.js project:
+
 npm init -y
-That creates package.json.
-Then push it:
+
+# Commit and push
 git add package.json
 git commit -m "Add package.json"
 git push
+
+
+⸻
+
+Performance (Example)
+	•	Net Profit: +13.47 USDT
+	•	ROI: +13.9% (from 100 USDT in 1 month)
+	•	Max Drawdown: 1.96%
+	•	Win/Loss: 8 wins vs 14 losses, but largest win (+8.9%) is much greater than largest loss (-0.56%).
+
+⸻
+
+⚠️ Disclaimer
+
+This strategy is provided for educational purposes only.
+Trading involves risk — use at your own discretion. This is not financial advice.
+
